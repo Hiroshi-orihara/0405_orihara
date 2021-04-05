@@ -1,8 +1,12 @@
-import Vue from 'vue'
-import App from './App.vue'
+const leapYearA = 2020
+const leapYearB = 2021
 
-Vue.config.productionTip = false
+console.log(leapYearA);
+console.log(leapYearB);
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+if ((year % 4 == 0 && year % 100 != 0) || year % 400 === 0){
+  console.log("うるう年です");
+} else {
+  console.log("うるう年ではありません");
+}
+    
